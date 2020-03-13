@@ -1,0 +1,17 @@
+# 安装 REST Client vscode插件
+# 接口测试文件 @url是地址，每个接口以###号分开
+@url=http://localhost:3009
+
+### 查询所有用户的接口
+GET {{url}}/user
+###
+
+### 参数是{}传递，参数上面是请求头
+POST {{url}}/user
+Content-Type: application/json; charset=utf-8
+
+{
+    "username": "123",
+    "password": "1231"
+}
+###
